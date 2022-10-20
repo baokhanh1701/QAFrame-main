@@ -1,0 +1,127 @@
+body{
+    margin:0;
+    padding:0;
+}
+.header{
+    height:5vh;
+    width:100vw;
+    background-color: rgb(179,179,179);
+}
+.header>button{
+    color:black;
+    background-color:transparent;
+    border:none;
+    height:5vh;
+    width:5vh;
+}
+.header>button:hover{
+    color:white;
+    cursor: pointer;
+}
+.box_content{
+    height:70vh;
+    width:100vw;
+    display:flex;
+}
+@media screen and (max-width:700px) {
+    body{
+        height: 170vh;
+    }
+    .box_content{
+        height:140vh;
+        width:100vw;
+        display:flex;
+        flex-direction: column;
+    }
+}
+.box_content .box_content_left{
+    font-size: 1.5rem;
+    padding:2em;
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.box_content .box_content_right{
+    flex:1;
+    background-image: url(Copy\ of\ Copy\ of\ dsc-ecosystem-banners-linkedin-blue.webp);
+    background-size: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.box_content .box_content_right>div{
+    width: 30rem;
+    height:3rem;
+    background-color: rgb(66,133,244);
+    font-size: 2rem;
+    margin:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px rgb(51,51,51);
+}
+.box_content .box_content_right>div:hover{
+    color:white;
+    cursor: pointer;
+}
+.footer{
+    height: 25vh;
+    width:100vw;
+    background-color:wheat;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.footer .box{
+    padding: 1rem 5rem;
+    font-size: 1.5em;
+}
+.footer .form{
+    padding :0 0 1rem;
+}
+.footer .form #inp {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: transparent;
+}
+.footer .form #inp:focus{
+    outline: none;
+}
+.footer .form #btn{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style:groove;
+    background-color: transparent;
+}
+.footer .form #btn:hover{
+    cursor: pointer;
+    color:white;
+} 
+.footer .box .icon>a{
+    color:rgb(179,179,179);
+    text-decoration: none;
+}
+.footer .box .icon .fa-envelope:hover {
+    color:black;
+    cursor: pointer;
+}
+.footer .box .icon .fa-facebook-f:hover{
+    color:black;
+    cursor:pointer;
+}
+.footer .box .icon .fa-linkedin-in:hover{
+    color:black;
+    cursor:pointer;
+}
+.footer .box .icon .fa-discord:hover{
+    color:black;
+    cursor: pointer;
+}

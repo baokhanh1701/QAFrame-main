@@ -1,0 +1,147 @@
+body{
+    margin:0;
+    padding:0;
+}
+.header{
+    height:5vh;
+    width:100vw;
+    background-color: rgb(179,179,179);
+}
+.header>button{
+    color:black;
+    background-color:transparent;
+    border:none;
+    height:5vh;
+    width:5vh;
+}
+.header>button:hover{
+    color:white;
+    cursor: pointer;
+}
+
+.body{
+    width:100vw;
+    height: 70vh;
+    background-image: url(Copy\ of\ Copy\ of\ dsc-ecosystem-banners-linkedin-blue.webp);
+    background-size: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.body .logIn{
+    width: 90vw;
+    height: 60vh;
+    background-image: url(caroImage2.jpg);
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.body .logIn .headerContent{
+    font-size: 2.5rem;
+    margin: 1.5em 0 1rem 0;
+}
+.body .logIn .content{
+    margin: 0 0 3rem 0;
+}
+.body .logIn .form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.body .logIn .form .inp{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.body .logIn .form .inp > input{
+    padding-left: 2rem;
+    /* margin-left:1rem; */
+    width:15rem;
+    height: 3rem;
+    border:none;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px rgb(179,179,179);
+}
+.body .logIn .form .inp > input:focus{
+    outline:none;
+}
+
+.body .logIn .form .inp >i{
+    color:rgb(102,102,102);
+    position:absolute;
+    margin-left: 1rem;
+}
+.body .logIn .form > button{
+    width:17rem;
+    height: 2rem;
+    border:none;
+    background-color: rgb(66,133,244);
+    color:white;
+    border-radius: 6px;
+    box-shadow: 5px 5px 5px rgb(179,179,179);
+}
+.body .logIn .form > button:hover{
+    color:black;
+    cursor: pointer;    
+}
+.footer{
+    height: 25vh;
+    width:100vw;
+    background-color:wheat;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.footer .box{
+    padding: 1rem 5rem;
+    font-size: 1.5em;
+}
+.footer .form{
+    padding :0 0 1rem;
+}
+.footer .form #inp {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: transparent;
+}
+.footer .form #inp:focus{
+    outline: none;
+}
+.footer .form #btn{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style:groove;
+    background-color: transparent;
+}
+.footer .form #btn:hover{
+    cursor: pointer;
+    color:white;
+}
+.footer .box .icon>a{
+    color:rgb(179,179,179);
+    text-decoration: none;
+}
+.footer .box .icon .fa-envelope:hover {
+    color:black;
+    cursor: pointer;
+}
+.footer .box .icon .fa-facebook-f:hover{
+    color:black;
+    cursor:pointer;
+}
+.footer .box .icon .fa-linkedin-in:hover{
+    color:black;
+    cursor:pointer;
+}
+.footer .box .icon .fa-discord:hover{
+    color:black;
+    cursor: pointer;
+}

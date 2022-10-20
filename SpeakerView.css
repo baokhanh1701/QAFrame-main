@@ -1,0 +1,328 @@
+html body{
+    min-height: 100vh;
+    overflow: scroll;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+.header{
+    height:5vh;
+    width:100vw;
+    display: flex;
+    background-color: rgb(179,179,179);
+    position: relative;
+}
+.header>button{
+    color:black;
+    background-color:transparent;
+    border:none;
+    height:5vh;
+    width:5vh;
+}
+.header>button:hover{
+    color:white;
+    cursor: pointer;
+}
+.header>div{
+    transform: scale(1.5);
+    position: absolute;
+    top: 0.5rem;
+    right:2rem;
+}
+
+.body{
+    width:100vw;
+    height: 78vh;
+    background-color:rgb(251,203,67); 
+    background-size: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.body .chat{
+    width:30vw;
+    height: 100%;
+    /* border:solid; */
+}
+.body .chat .account-info{
+    width:100%;
+    height:12%;
+    background-color: bisque;
+    display: flex;
+}
+.body .chat .account-info>i{
+    margin:0.5rem;
+}
+.body .chat .account-info .name{
+    display: flex;
+    flex-direction: column;
+}
+.body .chat .chat-content{
+    width: 100%;
+    height: 78%;
+    background-color:coral;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+}
+.body .chat .chat-content .question{
+    background-color: wheat;
+    margin:1rem 3rem 1rem 1rem;
+    border-radius: 20px;
+}
+.body .chat .chat-content .question .head>i{
+    /* background-color: coral; */
+    margin-left:1rem;
+    margin-top: 1rem;
+    transform: scale(1.25);
+}
+.body .chat .chat-content .question .head>div{
+    margin-left:0.5rem;
+    font-size:1.5rem;
+    display: inline;
+}
+.body .chat .chat-content .question .content{
+    display: flex;
+    flex-direction: column;
+}
+.body .chat .chat-content .question .content .text{
+    margin-right: 5rem;
+    margin-left: 1rem;
+}
+.body .chat .chat-content .question .content .interact{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.body .chat .chat-content .question .content .interact>i{
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+.body .chat .chat-content .question .content .interact>i:hover{
+    cursor: pointer;
+    color:white;
+}
+.body .chat .chat-content .answer{
+    background-color: wheat;
+    margin:0.5rem 0.5rem 0.5rem 3rem;
+    border-radius: 20px;
+    padding: 0.8rem;
+    background-color: rgb(66,133,244);
+}
+.body .chat .input{
+    width: 100%;
+    height: 10%;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.body .chat .input>input{
+    width:90%;
+    height:60%;
+    border:none;
+    background-color: transparent;
+    border-bottom-style: groove;
+    font-size: 1rem;
+}
+.body .chat .input>input:focus{
+    outline:none;
+}
+.body .chat .input>i:hover{
+    color:white;
+    cursor: pointer;
+}
+.body .mid-part{
+    width:30vw;
+    height: 100%;
+    /* background-color: blue; */
+    display:flex;
+    flex-direction: column;
+    
+}
+.body .mid-part .on-air{
+    flex:1;
+    margin-bottom: 1rem;
+    background-color:aqua;
+    /* border: solid; */
+}
+.body .mid-part .on-air .headOnAir{
+    width:100%;
+    height:3rem;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.body .mid-part .on-air .OnAirStream{
+    max-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+}
+.body .mid-part .on-air .OnAirStream .AirQuestion{
+    background-color: brown;
+    border-radius: 20px;
+    margin:0.5rem;
+}
+.body .mid-part .on-air .OnAirStream .AirQuestion .headAir{
+    display: flex;
+}
+.body .mid-part .on-air .OnAirStream .AirQuestion .headAir>i{
+    margin:1rem 0rem 0rem 1rem;
+    transform: scale(1.25);
+}
+.body .mid-part .on-air .OnAirStream .AirQuestion .headAir>div{
+    font-size:1.5rem;
+    margin:0.5rem 0rem 0rem 0.5rem;
+    display: inline;
+}
+.body .mid-part .on-air .OnAirStream .AirQuestion .AirContent{
+    margin: 0 1rem 1rem 1rem;
+}
+.body .mid-part .pending{
+    flex:2;
+    background-color: pink;
+}
+.body .mid-part .pending .headPending{
+    width:100%;
+    height:3rem;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.body .mid-part .pending .OnPendingStream{
+    max-height: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+}
+.body .mid-part .pending .OnPendingStream .PendingQuestion{
+    background-color: coral;
+    border-radius: 20px;
+    margin:0.5rem;
+}
+.body .mid-part .pending .OnPendingStream .PendingQuestion .headerPending{
+    display: flex;
+}
+.body .mid-part .pending .OnPendingStream .PendingQuestion .headerPending>i{
+    margin:1rem 0rem 0rem 1rem;
+    transform: scale(1.25);
+}
+.body .mid-part .pending .OnPendingStream .PendingQuestion .headerPending>div{
+    font-size:1.5rem;
+    margin:0.5rem 0rem 0rem 0.5rem;
+    display: inline;
+}
+.body .mid-part .pending .OnPendingStream .PendingQuestion .PendingContent{
+    margin: 0 1rem 1rem 1rem;
+}
+.body .questionStream{
+    width:30vw;
+    height: 100%;
+    background-color: pink;
+    /* border:solid; */
+    display: flex;
+    flex-direction: column;
+}
+.body .questionStream .head{
+    width:100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    font-size: 1.5rem;
+}
+.body .questionStream .listQuestion{
+    width:100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.body .questionStream .listQuestion .Question{
+    /* margin:1rem; */
+    width: 85%;
+    height: max-content;
+    background-color: aqua;
+    margin:1rem;
+    padding:0.6rem;
+    border-radius: 20px;
+}
+.body .questionStream .listQuestion .Question .header-question{
+    display: flex;
+}
+.body .questionStream .listQuestion .Question .header-question>div{
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+}
+.footer{
+    height: 17vh;
+    width:100vw;
+    background-color:wheat;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.footer .box{
+    padding: 1rem 5rem;
+    font-size: 1.5em;
+}
+.footer .form{
+    padding :0 0 1rem;
+}
+.footer .form #inp {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: transparent;
+}
+.footer .form #inp:focus{
+    outline: none;
+}
+.footer .form #btn{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style:groove;
+    background-color: transparent;
+}
+.footer .form #btn:hover{
+    cursor: pointer;
+    color:white;
+}
+.footer .box .icon>a{
+    color:rgb(179,179,179);
+    text-decoration: none;
+}
+.footer .box .icon .fa-envelope:hover {
+    color:black;
+    cursor: pointer;
+}
+.footer .box .icon .fa-facebook-f:hover{
+    color:black;
+    cursor:pointer;
+}
+.footer .box .icon .fa-linkedin-in:hover{
+    color:black;
+    cursor:pointer;
+}
+.footer .box .icon .fa-discord:hover{
+    color:black;
+    cursor: pointer;
+}
