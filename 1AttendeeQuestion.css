@@ -1,0 +1,193 @@
+body{
+    margin:0;
+    padding:0;
+}
+.header{
+    height:5vh;
+    width:100vw;
+    display: flex;
+    background-color: rgb(179,179,179);
+    position: relative;
+}
+.header>button{
+    color:black;
+    background-color:transparent;
+    border:none;
+    height:5vh;
+    width:5vh;
+}
+.header>button:hover{
+    color:white;
+    cursor: pointer;
+}
+.header>div{
+    transform: scale(1.5);
+    position: absolute;
+    top: 0.5rem;
+    right:2rem;
+}
+
+.body{
+    width:100vw;
+    height: 70vh;
+    background-color:rgb(251,203,67); 
+    background-size: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.body .addQuestion{
+    width: 90vw;
+    height: 65vh;
+    /* background-image: url(caroImage2.jpg); */
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.body .addQuestion .headerContent{
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+}
+.body .addQuestion .newQuestion{
+    width: 49vw;
+    height: 14vh;
+    position: relative;
+    background-color: rgb(179,179,179);
+}
+.body .addQuestion .newQuestion>textarea{
+    resize: none;
+    width: 45vw;
+    height: 10vh;
+    margin: 0.5rem;
+    border:none;
+    position: absolute;
+}
+.body .addQuestion .newQuestion>textarea:focus{
+    outline:none;
+}
+.body .addQuestion .newQuestion>button{
+    position: absolute;
+    bottom: 0;
+    border: none;
+    background-color: transparent;
+    right:0.5rem;
+    margin-bottom: 0.7rem;
+}
+.body .addQuestion .newQuestion>button:hover{
+    cursor: pointer;
+    color:rgb(66,133,244);
+}
+.body .addQuestion .listQuestion{
+    /* background-color: aqua; */
+    width: 50vw;
+    height: 46vh;
+    overflow: auto;
+    max-height: fit-content;
+}
+.body .addQuestion .listQuestion .question{
+    background-color: wheat;
+    margin:0.5rem;
+}
+.body .addQuestion .listQuestion .question .head>i{
+    /* background-color: coral; */
+    margin-left:0.5em;
+    /* margin-top: 0.5em; */
+    transform: scale(1.25);
+}
+.body .addQuestion .listQuestion .question .head>div{
+    font-size:1.5rem;
+    display: inline;
+}
+.body .addQuestion .listQuestion .question .content{
+    display: flex;
+    flex-direction: column;
+}
+.body .addQuestion .listQuestion .question .content .text{
+    margin-right: 5rem;
+    margin-left: 1rem;
+}
+.body .addQuestion .listQuestion .question .content .interact{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.body .addQuestion .listQuestion .question .content .interact>i{
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+.body .addQuestion .listQuestion .question .content .interact>i:hover{
+    cursor: pointer;
+    color:white;
+}
+.footer{
+    height: 25vh;
+    width:100vw;
+    background-color:wheat;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.footer .box{
+    padding: 1rem 5rem;
+    font-size: 1.5em;
+}
+.footer .form{
+    padding :0 0 1rem;
+}
+.footer .form #inp {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: transparent;
+}
+.footer .form #inp:focus{
+    outline: none;
+}
+.footer .form #btn{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style:groove;
+    background-color: transparent;
+}
+.footer .form #btn:hover{
+    cursor: pointer;
+    color:white;
+}
+.footer .box .icon>a{
+    color:rgb(179,179,179);
+    text-decoration: none;
+}
+.footer .box .icon .fa-envelope:hover {
+    color:black;
+    cursor: pointer;
+}
+.footer .box .icon .fa-facebook-f:hover{
+    color:black;
+    cursor:pointer;
+}
+.footer .box .icon .fa-linkedin-in:hover{
+    color:black;
+    cursor:pointer;
+}
+.footer .box .icon .fa-discord:hover{
+    color:black;
+    cursor: pointer;
+}
+.comments {
+    background-color: white;
+    padding:10px;
+    width: 500px;
+    margin: 15px 20px;
+    height:auto;
+    resize:none;
+    border-radius: 10px;
+
+}
+.btn-comments{
+    cursor:pointer;
+}
+.list-comments{display:none;}
