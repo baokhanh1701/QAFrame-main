@@ -3,23 +3,22 @@ h1 {
 }
 
 body {
+    overflow-x: hidden;
+    position:relative;
     margin: 0;
     background-image: url("./pexels-pixabay-434337.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    backdrop-filter: blur(2px);
 }
 
 
 .header {
     position: fixed;
-    top: 0;
     width: 100%;
     overflow: hidden;
     padding: 10px 10px;
     background-color: white;
-    opacity: 90%;
 }
 
 /* Style the header links */
