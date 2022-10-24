@@ -195,21 +195,20 @@ body>div {
     animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    z-index: 99;
 }
 
 .square:hover {
-    transition-duration: 3000ms;
-    opacity: 0%;
+    transition-duration: 1000ms;
 }
 
 .square1:hover {
-    background-color: rgb(66, 133, 244);
+    background-color: #A2A7FF;
     transition-duration: 3000ms;
-    opacity: 0%;
 }
 
 .blob_circle:hover {
-    transition-duration: 3000ms;
+    transition-duration: 1000ms;
     opacity: 0%;
 }
 
