@@ -4,7 +4,7 @@ h1 {
 
 body {
     overflow-x: hidden;
-    position:relative;
+    position: relative;
     margin: 0;
     background-image: url("./pexels-pixabay-434337.jpg");
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ body {
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .header a {
         float: none;
         display: block;
@@ -80,6 +80,33 @@ body {
 
     .header-right {
         float: none;
+    }
+
+    .header a:not(:first-child) {
+        display: none;
+    }
+
+    .header a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header.responsive {
+        position: relative;
+    }
+
+    .header.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .header.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 }
 
@@ -174,7 +201,7 @@ body {
 }
 
 .square1:hover {
-    background-color:rgb(66, 133, 244);
+    background-color: rgb(66, 133, 244);
     transition-duration: 3000ms;
     opacity: 0%;
 }
@@ -218,16 +245,19 @@ body {
 
 @-webkit-keyframes floatBubble {
     0% {
-        top:1300px;
+        top: 1300px;
     }
+
     100% {
         top: 0px;
     }
 }
+
 @keyframes floatBubble {
     0% {
-        top:1300px;
+        top: 1300px;
     }
+
     100% {
         top: 0px;
     }
