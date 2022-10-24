@@ -3,7 +3,6 @@ h1 {
 }
 
 body {
-    overflow-x: hidden;
     position: relative;
     margin: 0;
     background-image: url("./pexels-pixabay-434337.jpg");
@@ -12,6 +11,9 @@ body {
     background-size: cover;
 }
 
+body>div {
+    overflow-x: hidden;
+}
 
 .header {
     position: fixed;
