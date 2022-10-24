@@ -18,28 +18,30 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <!------------------------------------->
-    <div class="header">
+    <div class="position-fixed fixed-top header">
         <a href="#default" class="logo">Live Q&A</a>
         <div class="header-right">
             <a class="active" href="#introduction">Introduction</a>
             <a href="#overview">Overview</a>
-            <a href="#about">About</a>
+            <a href="#about">Features</a>
             <a class="active1" href="#contact">Contact </a>
         </div>
     </div>
     <!------------------------------------->
     <br>
-    <div class="container-fluid introduction p-5 bg-white bg-opacity-75 justify-content-center" id="#introduction">
+    <div class="container-fluid introduction p-5 bg-white bg-opacity-75 justify-content-center" id="introduction">
         <div class="blob_circle move_right_animation"></div>
-        <h1 class="text-center text-lg-center text-decoration-underline">Live Q&A</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est possimus ea eum sunt
+        <h1 class="text-center text-lg-center text-decoration-underline p-4" style="font-size:75px">Live Q&A</h1>
+        <p class="text-center p-5" style="font-size:25px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est possimus ea eum sunt
             ratione. Veniam consectetur
             dicta maiores quae amet, ipsam distinctio eveniet iste rem fugit quos magnam, inventore consequatur.</p>
-        <div class="container d-flex justify-content-center">
-            <a href="#overview" type="button" class="btn btn-outline-primary m-2">Get Started</a>
-            <a href="#contact" type="button" class="btn btn-outline-dark m-2">Contact</a>
+        <div class="container d-flex justify-content-center p-2">
+            <a href="#overview" type="button" class="btn btn-outline-primary m-2 p-4">Get Started</a>
+            <a href="#contact" type="button" class="btn btn-outline-dark m-2 p-4">Contact</a>
         </div>
-        <div class="blob_circle move_left_animation"></div>
+        <div class="container d-flex">
+            <div class="square1"></div>
+        </div>
     </div>
     <br>
     <!------------------------------------->
@@ -48,9 +50,9 @@
         id="overview">
         <div class="container justify-content-center">
             <div class="square opacity-25"></div>
-            <div class="container-fluid justify-content-center p-3">
-                <h1 class="text-center p-3 text-white">Overview</h1>
-                <p class="text-center d-flex p-3 text-white"> Eu sit voluptate pariatur non eu. Aliqua magna consectetur
+            <div class="container-fluid justify-content-center p-5">
+                <h1 class="text-center text-white" style="font-size:75px">Overview</h1>
+                <p class="text-center d-flex p-5 text-white" style="font-size:25px"> Eu sit voluptate pariatur non eu. Aliqua magna consectetur
                     mollit
                     amet
                     sit sunt amet excepteur ea est.
@@ -61,17 +63,19 @@
                     ipsum officia do esse commodo laborum esse et minim. Aliqua magna pariatur magna ex tempor.</p>
             </div>
         </div>
-        <div class="container d-flex justify-content-center p-5">
-            <button type="button" class="btn btn-success">Enter Current Event Session</button>
+        <div class="container d-flex justify-content-center p-3">
+            <a type="button" href="./AttendeeLogin/1AttendeeLogIn.html" class="btn btn-success p-4">Enter Current Event
+                Session</a>
         </div>
     </div>
     <br>
     <!------------------------------------->
     <div class="container-fluid about justify-content-center align-items-center bg-white bg-opacity-25 p-5" id="about">
         <div class="container justify-content-center">
+            <div class="blob_circle float_animation"></div>
             <div class="container-fluid justify-content-center p-3">
-                <h1 class="text-center p-3 text-black">About</h1>
-                <p class="text-center d-flex p-3 text-black"> Eu sit voluptate pariatur non eu. Aliqua magna consectetur
+                <h1 class="text-center p-3 text-black" style="font-size:75px">Features and Development</h1>
+                <p class="text-center d-flex p-3 text-black" style="font-size:25px"> Eu sit voluptate pariatur non eu. Aliqua magna consectetur
                     mollit
                     amet
                     sit sunt amet excepteur ea est.
@@ -82,24 +86,12 @@
                     ipsum officia do esse commodo laborum esse et minim. Aliqua magna pariatur magna ex tempor.</p>
             </div>
         </div>
-    </div>
-
-    <br>
-    <!------------------------------------->
-    <div class="container-fluid flex p-5 bg-black bg-opacity-75" id="contact">
-        <h1 class="text-center text-white py-4">Contact</h1>
-        <p class="text-center text-white py-4">Id tempor duis magna qui occaecat et aliquip culpa nisi id irure in.
-            Cupidatat est elit ea eu occaecat
-            exercitation culpa. Qui sunt magna voluptate elit velit cupidatat incididunt sit nostrud veniam culpa.
-            Proident duis qui tempor qui.</p>
-        <br>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top"
-                        alt="Hollywood Sign on The Hill" />
+                    <img src="./assets/img/306537625_555839073015387_2277694341506113401_n.jpg" class="card-img-top" alt="typical wireframe" />
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Pham Tri Nhan</h5>
                         <p class="card-text">
                             This is a longer card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.
@@ -109,20 +101,20 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top"
-                        alt="Palm Springs Road" />
+                    <img src="./resources/caroImage2.jpg" class="card-img-top" alt="Tran Hoang Sa" />
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
+                        <h5 class="card-title">Tran Hoang Sa</h5>
+                        <p class="card-text"> This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top"
-                        alt="Los Angeles Skyscrapers" />
+                    <img src="./resources/Copy of Copy of dsc-ecosystem-banners-linkedin-blue.webp" class="card-img-top"
+                        alt="Nguyen Kieu Bao Khanh" />
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Nguyen Kieu Bao Khanh</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                             additional content.</p>
                     </div>
@@ -131,6 +123,58 @@
         </div>
     </div>
 
+    <br>
+    <!------------------------------------->
+    <div class="container-fluid flex p-5 bg-black bg-opacity-75" id="contact">
+        <div class="container">
+            <h1 class="text-center text-white" style="font-size:75px">Contact</h1>
+            <p class="text-center text-white p-5" style="font-size:25px">Id tempor duis magna qui occaecat et aliquip culpa nisi id irure
+                in.
+                Cupidatat est elit ea eu occaecat
+                exercitation culpa. Qui sunt magna voluptate elit velit cupidatat incididunt sit nostrud veniam culpa.
+                Proident duis qui tempor qui.</p>
+            <br>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/img/profile/JCRQC.png" class="card-img-top"
+                        alt="Tran Hoang Sa" />
+                    <div class="card-body">
+                        <h5 class="card-title">Tran Hoang Sa</h5>
+                        <p class="card-text"> This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/img/profile/caroImage.jpg" class="card-img-top" alt="Pham Tri Nhan" />
+                    <div class="card-body">
+                        <h5 class="card-title">Pham Tri Nhan</h5>
+                        <p class="card-text">
+                            This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/img/profile/177A5123.JPG" class="card-img-top" alt="Nguyen Kieu Bao Khanh" />
+                    <div class="card-body">
+                        <h5 class="card-title">Nguyen Kieu Bao Khanh</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <br>
 </body>
 <footer class="bg-dark text-center text-white" id="footer">
