@@ -264,7 +264,22 @@ body>div {
     }
 }
 
-.baokhanh:hover{
-    color: white !important;
-    background-color: black;
+.active2{
+    padding: 10px 10px;
+    background-color: rgb(134, 179, 250);
+    color: white;
+    font-size: large;
+    position: fixed;
+    bottom: 0.001%;
+    right: 1%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    align-items: center;
+
+}
+
+.active2:hover {
+    background-color: rgb(66, 133, 244);
+    transition-duration: 300ms;
+    color: white;
 }
