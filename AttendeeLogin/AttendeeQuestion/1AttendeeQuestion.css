@@ -87,7 +87,6 @@ body {
     width: 49vw;
     height: 14vh;
     position: relative;
-    background-color: rgb(179,179,179);
 }
 .body .addQuestion .newQuestion>textarea{
     resize: none;
@@ -120,7 +119,7 @@ body {
     max-height: fit-content;
 }
 .body .addQuestion .listQuestion .question{
-    background-color: wheat;
+    background-color: white;
     margin:0.5rem;
 }
 .body .addQuestion .listQuestion .question .head>i{
@@ -154,7 +153,7 @@ body {
     cursor: pointer;
     color:white;
 }
-.footer{
+/* .footer{
     height: 25vh;
     width:100vw;
     background-color:wheat;
@@ -210,7 +209,7 @@ body {
 .footer .box .icon .fa-discord:hover{
     color:black;
     cursor: pointer;
-}
+} */
 .comments {
     background-color: white;
     padding:10px;

@@ -1,34 +1,32 @@
-let btn = document.querySelector('#btn');
-let qstionInput = document.querySelector('#newQ');
-let user = document.querySelector('#user').innerHTML;
-let question= getQuestionfromLocalStorage()
-renderTasks(question)
-btn.addEventListener('click', function () {
-if (!qstionInput.value) {
-alert ("Please Enter Your Question!")
-return false
-}
-let question= getQuestionfromLocalStorage()
-question.push({name: qstionInput.value})
-qstionInput.value=''
-localStorage.setItem('question',JSON.stringify(question))
-renderTasks(question)
-})
-function renderTasks(question=[]) {
-    let content='<div>'
+let btn = document.querySelector("#btn_submit");
+let qstionInput = document.querySelector("#newQ");
+let question = getQuestionfromLocalStorage();
+
+renderTasks(question);
+btn.addEventListener("click", () => {
+    if (!qstionInput.value) {
+        alert("Please Enter Your Question!");
+        return false;
+    }
+    let question = getQuestionfromLocalStorage();
+    question.push({ name: qstionInput.value });
+    qstionInput.value = "";
+    localStorage.setItem("question", JSON.stringify(question));
+    renderTasks(question);
+});
+function renderTasks(question = []) {
+    let content = "<div>";
     question.forEach((question) => {
-        content +=`<div class="question">
-        <div class="head">
-            <i class="fa-solid fa-circle-user"></i>
-            <div>${user}</div>
+        content += `
+        <div class="question container-fluid p-1 m-2 border border-dark">
+        <div class="head container text-left">
+            <div>User</div>
         </div>
-        <div class="content">
-            <div class="text">
+        <div class="content p-2">
+            <div class="text p-2">
                 ${question.name}
             </div>
             <div class="interact">
-                <b id ="btn-comments" class="btn-comments" style="margin:5px;" onclick="showListComments()">Comments</b>
-                <b style="margin:5px">|</b>
                 <i class="fas fa-thumbs-up"></i>
                 <i class="fas fa-thumbs-down" style="transform: scale(-1,1);"></i>
             </div>
@@ -41,28 +39,30 @@ function renderTasks(question=[]) {
 
         <div id="comments" class="comments">Văn bản là một loại hình phương tiện để ghi nhận, lưu giữ và truyền đạt các thông tin từ chủ thể này sang chủ thể khác bằng ký hiệu gọi là chữ viết. Nó gồm tập hợp các câu có tính trọn vẹn về nội dung, hoàn chỉnh về hình thức, có tính liên kết chặt chẽ và</div>
         </div>
-    </div>`})
-    content +='</div>'
-    document.querySelector('#result').innerHTML=content;
+    </div>`;
+    });
+    content += "</div>";
+    document.querySelector("#result").innerHTML = content;
 }
 
-    
-localStorage.removeItem('question')
-function getQuestionfromLocalStorage()
-{ return localStorage.getItem('question') ? JSON.parse(localStorage.getItem('question')) :[]}
-    let listComments=document.querySelector('#list-comments') 
-    let isShow=true;
-    function showListComments() {
-
+localStorage.removeItem("question");
+function getQuestionfromLocalStorage() {
+    return localStorage.getItem("question")
+        ? JSON.parse(localStorage.getItem("question"))
+        : [];
+}
+let listComments = document.querySelector("#list-comments");
+let isShow = true;
+function showListComments() {
     if (isShow) {
-        
-        listComments.style.display="none";
-        isShow=false;
+        listComments.style.display = "none";
+        isShow = false;
     } else {
-        listComments.style.display="block";
-        isShow=true;
+        listComments.style.display = "block";
+        isShow = true;
     }
 }
+                // <b id ="btn-comments" class="btn-comments" style="margin:5px;" onclick="showListComments()">Comments</b>
 
 //////////////////////comment-input//////
 
