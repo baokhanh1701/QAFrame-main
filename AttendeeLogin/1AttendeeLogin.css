@@ -41,8 +41,17 @@ body {
 
 /* Style the active/current link*/
 .header a.active {
+    /* background-color: rgb(134, 179, 250); */
     background-color: rgb(66, 133, 244);
     color: white;
+}
+
+
+.header a.active:hover {
+    /* background-color: rgb(66, 133, 244); */
+    background-color: #ddd;
+    transition-duration: 300ms;
+    color: black;
 }
 
 /* Float the link section to the right */

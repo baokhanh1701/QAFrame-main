@@ -27,8 +27,8 @@ function renderTasks(question = []) {
                 ${question.name}
             </div>
             <div class="interact">
-                <i class="fas fa-thumbs-up"></i>
-                <i class="fas fa-thumbs-down" style="transform: scale(-1,1);"></i>
+                <i class="fas fa-thumbs-up thumbs"></i>
+                <i class="fas fa-thumbs-down thumbs" style="transform: scale(-1,1);"></i>
             </div>
             
         </div>
