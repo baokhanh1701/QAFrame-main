@@ -18,11 +18,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    <div class="header">
-        <a href="../index.html" class="logo">Live Q&A</a>
+    <script src="/index.js"></script>
+    <div class="position-fixed fixed-top header">
+        <a href="/index.html" class="logo" style="font-size:25px">Live Q&A</a>
         <div class="header-right">
-            <a class = "active" href="../index.html">Home</a>
-            <a href="#about">Contact & About</a>
+            <a class="active" href="../index.html">Home</a>
+            <a href="/index.html#contact">Contact & About</a>
         </div>
     </div>
     <div class="body">
@@ -46,32 +47,29 @@
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                         aria-labelledby="panelsStayOpen-headingOne">
                         <div class="accordion-body">
-                            <strong>At this step, please enter your name or nickname in the section below.</strong> Next, press the button to go to the
-                             Q&A session and freely express your questions!
+                            <strong>At this step, please enter your name or nickname in the section below.</strong>
+                            Next, press the button to go to the
+                            Q&A session and freely ask your questions!
                         </div>
                     </div>
                 </div>
-                <!-- <div class="accordion-item">
+                <div class="accordion-item">
                     <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseTwo">
-                            Accordion Item #2
+                            Sign in with your name or anonymously
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingTwo">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                            the collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                            <strong>You can sign in anonymously.</strong> By checking "sign in anonymously", your name
+                            will not appear on the screen.
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <!-- <div class="accordion-item">
                     <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
@@ -98,12 +96,13 @@
                     <input type="text" class="form-control p-3" id="nameInput" aria-describedby="emailHelp"
                         placeholder="Enter your name here">
                 </div>
-                <div class="mb-4 form-check container">
-                    <input type="checkbox" class="form-check-input" id="anonymously>
+                <div class="m-3 form-check container">
+                    <input type="checkbox" class="form-check-input" id="anonymously" onclick="signInAnonymous()">
                     <label class="form-check-label" for="exampleCheck1"> Sign in anonymously </label>
                 </div>
                 <div class="text-center justify-content-center align-items-center">
-                    <a type="button" href="./AttendeeQuestion/1AttendeeQuestion.html" class="btn btn-primary justify-content-center">Enter current event
+                    <a type="button" href="./AttendeeQuestion/1AttendeeQuestion.html"
+                        class="btn btn-primary justify-content-center">Enter current event
                         session</a>
                 </div>
 
