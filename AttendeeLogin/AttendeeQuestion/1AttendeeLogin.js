@@ -18,7 +18,7 @@ function renderTasks(question = []) {
     let content = "<div>";
     question.forEach((question) => {
         content += `
-        <div class="question container-fluid p-1 m-2 border border-dark">
+        <div class="question container-fluid p-1 m-2 border border-dark shadow rounded">
         <div class="head container text-left">
             <div>User</div>
         </div>
