@@ -1,3 +1,5 @@
+
+
 let btn = document.querySelector("#btn_submit");
 let qstionInput = document.querySelector("#newQ");
 let question = getQuestionfromLocalStorage();
@@ -5,7 +7,7 @@ let question = getQuestionfromLocalStorage();
 renderTasks(question);
 btn.addEventListener("click", () => {
     if (!qstionInput.value) {
-        alert("Please Enter Your Question!");
+        swal("Error!", "Please enter your question before submit.", "error");
         return false;
     }
     let question = getQuestionfromLocalStorage();
