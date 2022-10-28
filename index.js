@@ -14,3 +14,4 @@ function signInAnonymous() {
 setTimeout(() => {
     document.body.setAttribute("class","loaded");
 }, 1500);
+

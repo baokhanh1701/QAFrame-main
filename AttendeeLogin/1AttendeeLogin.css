@@ -9,11 +9,11 @@ body {
 
 /* Style the header with a grey background and some padding */
 .header {
+    width: 100%;
     overflow: hidden;
     padding: 10px 10px;
     background-color: white;
     opacity: 90%;
-
 }
 
 /* Style the header links */
