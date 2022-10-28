@@ -91,7 +91,8 @@
                     </div>
                 </div> -->
             </div>
-            <form class="container justify-content-center">
+
+            <form class="container justify-content-center" id="nameForm">
                 <div class="mb-4 p-3 text-center justify-content-center align-items-center">
                     <label for="name" class="form-label p-3"><strong>Enter your name (or nickname)</strong></label>
                     <input type="text" class="form-control p-3" id="nameInput" aria-describedby="emailHelp"
@@ -102,15 +103,29 @@
                     <label class="form-check-label" for="exampleCheck1"> Sign in anonymously </label>
                 </div>
                 <div class="text-center justify-content-center align-items-center">
-                    <a type="button" href="./AttendeeQuestion/1AttendeeQuestion.html"
-                        class="btn btn-primary justify-content-center">Enter current event
-                        session</a>
+                    <button type="submit" class="btn btn-primary justify-content-center">Enter current event
+                        session</button>
                 </div>
-
             </form>
             <!-- -------------------- -->
             <br>
+            <script>
+                //* TRANSFER NAME FROM LOGIN TO QUESTION */
+                const nameForm = document.getElementById("nameForm");
+                const nameUser = document.getElementById("nameInput");
+                
+                nameForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    if (!nameUser.value) {
+                        alert("Please enter your name. If you want to sign in anonymously, please tick the checkbox below.");
+                        return false;
+                    }
+                    const nameValue = nameUser.value;
+                    localStorage.setItem('name-value', nameValue);
 
+                    window.location.href = "./AttendeeQuestion/1AttendeeQuestion.html";
+                })
+            </script>
             <!-- <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">

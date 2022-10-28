@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    background-image: url("/AttendeeLogin/img/pexels-tirachard-kumtanom-733852.jpg");
+    background-image: url("/AttendeeLogin/img/pexels-pixabay-509922.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
 }
 
 /* Style the header with a grey background and some padding */

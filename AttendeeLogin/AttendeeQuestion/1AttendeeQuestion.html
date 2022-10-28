@@ -20,7 +20,6 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <script defer src="/index.js"></script>
-    <script defer src="1AttendeeLogin.js"></script>
     <div class="header">
         <a href="/index.html" class="logo" style="font-size:25px">Live Q&A</a>
         <div href="#default" class="logo" id="user_name"></div>
@@ -31,8 +30,7 @@
     </div>
     <div class="container-fluid body">
         <div class="container addQuestion p-2">
-            <div class="headerContent"> <strong>Welcome, User.</strong> Enter your question below to ask the
-                speakers.</div>
+            <div class="headerContent text-center" id="Welcome"></div>
             <div class="newQuestion container p-3 justify-content-center align-items-center mb-5">
                 <div class="container-lg align-items-center justify-content-center p-2">
                     <textarea class="form-control form-control-sm" id="newQ" maxlength="300"
@@ -44,12 +42,12 @@
                 </div>
             </div>
             <!---->
-            <div class="listQuestion container p-2" style="overflow-x: hidden">
+            <div class="listQuestion container p-3 m-3" style="overflow-x: hidden">
                 <div id="result"></div>
                 <!-- List of question -->
                 <div class="question container-fluid p-1 m-2 border border-dark shadow rounded">
                     <div class="head container text-left">
-                        <div>Random User A</div>
+                        <div>Pham Tri Nhan</div>
                     </div>
                     <div class="content p-2">
                         <div class="text p-2">
@@ -75,7 +73,7 @@
                 </div>
                 <div class="question container-fluid p-1 m-2 border border-dark shadow rounded">
                     <div class="head container text-left">
-                        <div>Random User B</div>
+                        <div>Anonymous User</div>
                     </div>
                     <div class="content p-2">
                         <div class="text p-2">
@@ -106,7 +104,7 @@
                 </div>
                 <div class="question container-fluid p-1 m-2 border border-dark shadow rounded">
                     <div class="head container text-left">
-                        <div>Random User C</div>
+                        <div>IVanovich Krashkiroffs</div>
                     </div>
                     <div class="content p-2">
                         <div class="text p-2">
@@ -196,6 +194,11 @@
             </div>
         </div>
     </div>
+    <script>
+        const nameOutput = localStorage.getItem('name-value');
+        let content_welcome = `<strong> Welcome, ${nameOutput}.</strong> Enter your question below to ask the speakers in the current session.`;
+        document.getElementById('Welcome').innerHTML = content_welcome;
+    </script>
     <footer class="bg-dark text-center text-white" id="about">
         <!-- Grid container -->
         <div class="container p-4">
