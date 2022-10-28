@@ -49,7 +49,7 @@
                 <!-- List of question -->
                 <div class="question container-fluid p-1 m-2 border border-dark shadow rounded">
                     <div class="head container text-left">
-                        <div>User</div>
+                        <div>Random User A</div>
                     </div>
                     <div class="content p-2">
                         <div class="text p-2">
@@ -60,8 +60,10 @@
                             <!-- <b id="btn-comments" class="btn-comments m-1" style="margin:5px;"
                                 onclick="showListComments()">Comments</b> -->
                             <!-- <b style="margin:5px">|</b> -->
-                            <i class="fas fa-thumbs-up m-1 thumbs"></i>
-                            <i class="fas fa-thumbs-down m-1 thumbs" style="transform: scale(-1,1);"></i>
+                            <div class="upvote p-1" id="upvote-num" style="color: rgb(66, 133, 244)">0</div>
+                            <i class="fas fa-thumbs-up m-1 thumbs me-2 p-1" id="upvote" onclick="upVote(this)"></i>
+                            <div class="downvote p-1" id="downvote-num" style="color: rgb(244, 66,66)">0</div>
+                            <i class="fas fa-thumbs-down m-1 thumbs p-1" id="downvote" onclick="downVote(this)"></i>
                         </div>
                     </div>
                     <!-- <div id="list-comments" class="list-comments" style="overflow:scroll; max-height:300px;">
@@ -71,152 +73,272 @@
                         <div id="comments" class="comments">Con chó đỏ người ta gọi là con chó... đỏ.</div>
                     </div> -->
                 </div>
-                                <!-- End list of question -->
+                <div class="question container-fluid p-1 m-2 border border-dark shadow rounded">
+                    <div class="head container text-left">
+                        <div>Random User B</div>
+                    </div>
+                    <div class="content p-2">
+                        <div class="text p-2">
+                            X là một peptit mạch hở có 16 mắt xích (được tạo từ các a-amino axit no, hở, có 1 nhóm -NH2
+                            và 1 nhóm –COOH). Để đốt cháy m gam X cần dùng 45,696 lít O2. Nếu lấy m gam X cho tác dụng
+                            với lượng vừa đủ dung dịch NaOH rồi cô cạn cẩn thận thì thu được hỗn hợp chất rắn Y. Đốt
+                            cháy hoàn toàn Y trong bình chứa 12,5 mol không khí, toàn bộ khí sau phản ứng cháy được
+                            ngưng tụ hơi nước thì còn lại 271,936 lít hỗn hợp khí Z. Biết các phản ứng xẩy ra hoàn toàn,
+                            các khí đo ở đktc, trong không khí có 1/5 thể tích O2 còn lại là N2. Giá trị gần nhất của m
+                            là?
+                        </div>
+                        <div class="interact">
+                            <!-- <b id="btn-comments" class="btn-comments m-1" style="margin:5px;"
+                                onclick="showListComments()">Comments</b> -->
+                            <!-- <b style="margin:5px">|</b> -->
+                            <div class="upvote p-1" id="upvote-num" style="color: rgb(66, 133, 244)">0</div>
+                            <i class="fas fa-thumbs-up m-1 thumbs me-2 p-1" id="upvote" onclick="upVote(this)"></i>
+                            <div class="downvote p-1" id="downvote-num" style="color: rgb(244, 66,66)">0</div>
+                            <i class="fas fa-thumbs-down m-1 thumbs p-1" id="downvote" onclick="downVote(this)"></i>
+                        </div>
+                    </div>
+                    <!-- <div id="list-comments" class="list-comments" style="overflow:scroll; max-height:300px;">
+                        <textarea id="comments" class="comments"></textarea>
+                        <div id="comments" class="comments">hihi.</div>
+                        <div id="comments" class="comments">Con chó đỏ người ta gọi là con chó....</div>
+                        <div id="comments" class="comments">Con chó đỏ người ta gọi là con chó... đỏ.</div>
+                    </div> -->
+                </div>
+                <div class="question container-fluid p-1 m-2 border border-dark shadow rounded">
+                    <div class="head container text-left">
+                        <div>Random User C</div>
+                    </div>
+                    <div class="content p-2">
+                        <div class="text p-2">
+                            Có 1 chiếc thuyền tối đa là chỉ chở được hai người, nếu thêm người thứ 3 sẽ bị chìm ngay lập
+                            tức. Hỏi tại sao người ta trông thấy trên chiếc thuyền đó có ba thằng Mỹ đen và ba thằng Mỹ
+                            trắng ngồi trên chiếc thuyền đó mà ko bị chìm?
+                        </div>
+                        <div class="interact">
+                            <!-- <b id="btn-comments" class="btn-comments m-1" style="margin:5px;"
+                                onclick="showListComments()">Comments</b> -->
+                            <!-- <b style="margin:5px">|</b> -->
+                            <div class="upvote p-1" id="upvote-num" style="color: rgb(66, 133, 244)">0</div>
+                            <i class="fas fa-thumbs-up m-1 thumbs me-2 p-1" id="upvote" onclick="upVote(this)"></i>
+                            <div class="downvote p-1" id="downvote-num" style="color: rgb(244, 66,66)">0</div>
+                            <i class="fas fa-thumbs-down m-1 thumbs p-1" id="downvote" onclick="downVote(this)"></i>
+                        </div>
+                    </div>
+                    <!-- <div id="list-comments" class="list-comments" style="overflow:scroll; max-height:300px;">
+                        <textarea id="comments" class="comments"></textarea>
+                        <div id="comments" class="comments">hihi.</div>
+                        <div id="comments" class="comments">Con chó đỏ người ta gọi là con chó....</div>
+                        <div id="comments" class="comments">Con chó đỏ người ta gọi là con chó... đỏ.</div>
+                    </div> -->
+                </div>
+                <!-- End list of question -->
+            </div>
+            <!-- End list of question -->
+        </div>
+    </div>
+    </div>
+    <div class="container accordion mb-5" id="accordionExample">
+        <h3 class="text-center">Frequently Asked Questions</h3>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
             </div>
         </div>
     </div>
-    <div class = "mb-3"></div>
-</body>
-<footer class="bg-dark text-center text-white" id="about">
-    <!-- Grid container -->
-    <div class="container p-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-            <!-- Facebook -->
-            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-facebook-f"></i></a> -->
+    <footer class="bg-dark text-center text-white" id="about">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a> -->
 
-            <!-- Linkedin -->
-            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-linkedin-in"></i></a> -->
+                <!-- Linkedin -->
+                <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a> -->
 
-            <!-- Github -->
-            <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a> -->
-        </section>
-        <!-- Section: Social media -->
+                <!-- Github -->
+                <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a> -->
+            </section>
+            <!-- Section: Social media -->
 
-        <!-- Section: Form -->
-        <section class="">
-            <form action="">
-                <!--Grid row-->
-                <div class="row d-flex justify-content-center">
-                    <!--Grid column-->
-                    <div class="col-auto">
-                        <p class="pt-2">
-                            <strong>Sign up for our newsletter</strong>
-                        </p>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-5 col-12">
-                        <!-- Email input -->
-                        <div class="form-outline form-white mb-4">
-                            <input type="email" id="form5Example21" class="form-control" />
-                            <label class="form-label" for="form5Example21">Your email address</label>
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
                         </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21">Your email address</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
                     </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <!-- <section class="mb-4"> -->
+            <!-- <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                    repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                    eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p> -->
+            <!-- </section> -->
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+    
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                        </ul>
+                    </div> -->
                     <!--Grid column-->
 
                     <!--Grid column-->
-                    <div class="col-auto">
-                        <!-- Submit button -->
-                        <button type="submit" class="btn btn-outline-light mb-4">
-                            Subscribe
-                        </button>
-                    </div>
+                    <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+    
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+    
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Links</h5>
+    
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Link 2</a>
+                            </li>
+                        </ul>
+                    </div> -->
                     <!--Grid column-->
                 </div>
                 <!--Grid row-->
-            </form>
-        </section>
-        <!-- Section: Form -->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
 
-        <!-- Section: Text -->
-        <!-- <section class="mb-4"> -->
-            <!-- <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-                repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-                eum harum corrupti dicta, aliquam sequi voluptate quas.
-            </p> -->
-        <!-- </section> -->
-        <!-- Section: Text -->
+        <!-- Copyright -->
+        <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div> -->
+        <!-- Copyright -->
+    </footer>
 
-        <!-- Section: Links -->
-        <section class="">
-            <!--Grid row-->
-            <div class="row">
-                <!--Grid column-->
-                <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
+</body>
 
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-white">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 2</a>
-                        </li>
-                    </ul>
-                </div> -->
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-white">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 2</a>
-                        </li>
-                    </ul>
-                </div> -->
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-white">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 2</a>
-                        </li>
-                    </ul>
-                </div> -->
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <!-- <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-white">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 2</a>
-                        </li>
-                    </ul>
-                </div> -->
-                <!--Grid column-->
-            </div>
-            <!--Grid row-->
-        </section>
-        <!-- Section: Links -->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div> -->
-    <!-- Copyright -->
-</footer>
 </html>

@@ -18,28 +18,32 @@ function renderTasks(question = []) {
     let content = "<div>";
     question.forEach((question) => {
         content += `
-        <div class="question container-fluid p-1 m-2 border border-dark shadow rounded">
-        <div class="head container text-left">
-            <div>User</div>
-        </div>
-        <div class="content p-2">
-            <div class="text p-2">
-                ${question.name}
-            </div>
-            <div class="interact">
-                <i class="fas fa-thumbs-up thumbs"></i>
-                <i class="fas fa-thumbs-down thumbs" style="transform: scale(-1,1);"></i>
-            </div>
-            
-        </div>
-        <div id ="list-comments" class="list-comments" style="overflow:scroll; max-height:300px;">
-        <textarea id="comments" class="comments" ></textarea>
-    
-        <div id="resultComment"></div>
-
-        <div id="comments" class="comments">Văn bản là một loại hình phương tiện để ghi nhận, lưu giữ và truyền đạt các thông tin từ chủ thể này sang chủ thể khác bằng ký hiệu gọi là chữ viết. Nó gồm tập hợp các câu có tính trọn vẹn về nội dung, hoàn chỉnh về hình thức, có tính liên kết chặt chẽ và</div>
-        </div>
-    </div>`;
+        <div class="question container-fluid p-1 m-2 border border-dark shadow rounded bg-black opacity-75 text-white">
+                    <div class="head container text-left">
+                        <div> You </div>
+                    </div>
+                    <div class="content p-2">
+                        <div class="text p-2">
+                            ${question.name}
+                        </div>
+                        <div class="interact">
+                            <!-- <b id="btn-comments" class="btn-comments m-1" style="margin:5px;"
+                                onclick="showListComments()">Comments</b> -->
+                            <!-- <b style="margin:5px">|</b> -->
+                            <div class="upvote p-1" id="upvote-num" style="color: rgb(66, 133, 244)">0</div>
+                            <i class="fas fa-thumbs-up m-1 thumbs me-2 p-1" id="upvote" onclick="upVote(this)"></i>
+                            <div class="downvote p-1" id="downvote-num" style="color: rgb(244, 66,66)">0</div>
+                            <i class="fas fa-thumbs-down m-1 thumbs p-1"
+                                id="downvote" onclick="downVote(this)"></i>
+                        </div>
+                    </div>
+                    <!-- <div id="list-comments" class="list-comments" style="overflow:scroll; max-height:300px;">
+                        <textarea id="comments" class="comments"></textarea>
+                        <div id="comments" class="comments">hihi.</div>
+                        <div id="comments" class="comments">Con chó đỏ người ta gọi là con chó....</div>
+                        <div id="comments" class="comments">Con chó đỏ người ta gọi là con chó... đỏ.</div>
+                    </div> -->
+                </div>`;
     });
     content += "</div>";
     document.querySelector("#result").innerHTML = content;
@@ -62,7 +66,7 @@ function showListComments() {
         isShow = true;
     }
 }
-                // <b id ="btn-comments" class="btn-comments" style="margin:5px;" onclick="showListComments()">Comments</b>
+// <b id ="btn-comments" class="btn-comments" style="margin:5px;" onclick="showListComments()">Comments</b>
 
 //////////////////////comment-input//////
 
@@ -91,3 +95,13 @@ function showListComments() {
 //     contentComment +='</div>'
 //     document.querySelector('#resultComment').innerHTML=contentComment;
 // }}
+
+function upVote(e) {
+    let count = Number(e.previousElementSibling.innerText) + 1;
+    e.previousElementSibling.innerText = count;
+};
+
+function downVote(e) {
+    let count = Number(e.previousElementSibling.innerText) + 1;
+    e.previousElementSibling.innerText = count;
+};

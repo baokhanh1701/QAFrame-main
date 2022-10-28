@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: url("../img/pexels-tirachard-kumtanom-733857.jpg");
+    background-image: url("/AttendeeLogin/img/pexels-tirachard-kumtanom-733852.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -256,8 +256,24 @@ body {
     display: none;
 }
 
-.thumbs:hover {
+#upvote:hover {
     background-color: rgb(66, 133, 244);
     border-radius: 10%;
     transition: 200ms;
+}
+
+#upvote:active {
+    background-color: rgb(66, 133, 244);
+    transform: translateY(4px);
+}
+
+#downvote:hover {
+    background-color: rgb(244, 66, 66);
+    border-radius: 10%;
+    transition: 200ms;
+}
+
+#downvote:active {
+    background-color: rgb(255, 0, 0);
+    transform: translateY(4px);
 }
